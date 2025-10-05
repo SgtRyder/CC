@@ -257,6 +257,8 @@ GLOBAL_VAR(last_connection)
 		. = list("reason" = "Stickyban", "desc" = desc)
 		log_access("Failed Login: [key] [computer_id] [address] - StickyBanned [ban["message"]] Target Username: [bannedckey] Placed by [ban["admin"]]")
 
+	
+
 	if(!.)
 		GLOB.last_connection = world.time
 
