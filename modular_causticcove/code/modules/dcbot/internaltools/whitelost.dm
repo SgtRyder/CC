@@ -1,7 +1,7 @@
 /proc/amia_whitelistcheck(ckey)
 	if(CONFIG_GET(flag/amia_enabled))
 		var/constring =  amia_constring() + "CheckWL?ckey=[ckey]" 
-		var/list/response = world.Export(constring)
+		var/list/response = world.Export(url_encode(constring))
 		if(!islist(response))
 			log_runtime("Can't reach AMIA")
 			return FALSE
