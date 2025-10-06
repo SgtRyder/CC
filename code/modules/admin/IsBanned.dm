@@ -69,6 +69,8 @@ GLOBAL_VAR(last_connection)
 				return list("reason"="blacklist", "desc" = "\nSomething went wrong. Contact the Game Master.")
 */
 
+	if(!amia_whitelistcheck(ckey))
+		return list("reason"="Unverified","desc"="Your ckey is not associated with an active member account on our discord. Please verify by opening a ticket. If you are already verified, follow the instructions ikn #ckey-linking !")
 
 	if(!real_bans_only && !C)
 		if (!admin)
