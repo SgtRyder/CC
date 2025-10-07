@@ -2660,6 +2660,7 @@
 #include "modular_causticcove\code\modules\classes\wildsoul.dm"
 #include "modular_causticcove\code\modules\client\customizers\organ\genitals.dm"
 #include "modular_causticcove\code\modules\dcbot\config.dm"
+#include "modular_causticcove\code\modules\dcbot\internaltools\ahelprelay.dm"
 #include "modular_causticcove\code\modules\dcbot\internaltools\whitelost.dm"
 #include "modular_causticcove\code\modules\dcbot\proactivebits\newround.dm"
 #include "modular_causticcove\code\modules\dcbot\proactivebits\newroundstarted.dm"
