@@ -214,7 +214,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 			log_admin_private("No readminned admemes are present...")
 			if(CONFIG_GET(flag/amia_enabled))
 				log_admin_private("Automatic Mia is enabled, sending their whines to discord.")
-				to_chat(C, span_notice("No active admins are online. Your ahelp will try to be relayed to the admin channel now. You will receive a notification if someone takes it. Thank you for your patience"))
+				to_chat(C, span_notice("No active admins are online. Your ahelp will try to be relayed to the admin channel now. Thank you for your patience"))
 				amia_ahelprelay(id,initiator_ckey,msg)
 
 
