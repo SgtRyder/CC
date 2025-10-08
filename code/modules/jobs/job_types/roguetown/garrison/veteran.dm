@@ -13,7 +13,7 @@
 	advclass_cat_rolls = list(CTAG_VETERAN = 20)
 	display_order = JDO_VET
 	whitelist_req = TRUE
-	give_bank_account = 35
+	give_bank_account = 75 //Caustic edit Imagine being landed and starting dirt poor lmao what
 	min_pq = null //5 //Should...probably actually be a veteran of at least a few weeks before trying to teach others
 	max_pq = null
 	round_contrib_points = 2
@@ -273,8 +273,9 @@
 	subclass_stats = list(
 		STATKEY_WIL = 3,// two handed weapons require a LOT of stamina.
 		STATKEY_STR = 2,
-		STATKEY_CON = 1,
+		STATKEY_CON = 3,// caustic cove edit On par with normal grenzel merc
 		STATKEY_INT = 1,
+		STATKEY_PER = 1,// caustic cove edit On par with normal grenzel merc
 		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
@@ -291,7 +292,7 @@
 		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,// caustic cove edit same as normal grenzel
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN,
 	)
@@ -306,7 +307,7 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/grenzelhoft // You do NOT get the BLACKSTEEL CUIRASS because yours BROKE & I hate you. Go on a personal quest to replace it or something.
 	head = /obj/item/clothing/head/roguetown/grenzelhofthat
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate //Caustic Cove Edit, Fuck you whoever wrote the comment above this one.
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves
@@ -327,7 +328,7 @@
 		H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 		H.adjust_skillrank_up_to(/datum/skill/combat/axes, 5, TRUE)
 		H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
-		H.adjust_skillrank_up_to(/datum/skill/misc/athletics, 4, TRUE) // two handed weapons require a LOT of stamina.
+		H.adjust_skillrank_up_to(/datum/skill/misc/athletics, 5, TRUE) // Caustic Edit, two handed weapons require a LOT of stamina.
 
 	H.adjust_blindness(-3)
 	if(H.mind)
