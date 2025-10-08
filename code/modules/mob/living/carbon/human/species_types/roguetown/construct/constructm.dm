@@ -134,6 +134,10 @@
 /datum/species/construct/metal/check_roundstart_eligible()
 	return TRUE
 
+/datum/species/construct/on_species_gain(mob/living/carbon/foreign, datum/species/old_species)
+	..()
+	foreign.AddComponent(/datum/component/abberant_eater, list(/obj/item/rogueore/coal), TRUE)
+
 /datum/species/construct/metal/get_skin_list()
 	return list(
 		"BRASS" = "dfbd6c",
