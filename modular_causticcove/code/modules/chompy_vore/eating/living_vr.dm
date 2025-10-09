@@ -603,7 +603,7 @@
 		to_chat(src,span_warning("You can't eat such a large thing !"))//yet
 		return
 
-	if(do_after(src, 15 SECONDS)){
+	if(do_after(src, 10 SECONDS)){
 		I.forceMove(vore_selected)
 		updateVRPanel()
 		log_admin("VORE: [src] used Eat Trash to swallow [I].")
