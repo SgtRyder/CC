@@ -595,13 +595,14 @@
 
 	var/obj/item/I = get_active_held_item()
 
-	if(I.w_class != WEIGHT_CLASS_TINY)
-		to_chat(src,span_warning("You can't eat such a large thing !"))//yet
-		return
-	
 	if(!I)
 		to_chat(src, span_notice("You are not holding anything."))
 		return
+
+	if(I.w_class != WEIGHT_CLASS_TINY)
+		to_chat(src,span_warning("You can't eat such a large thing !"))//yet
+		return
+
 	if(do_after(src, 15 SECONDS)){
 		I.forceMove(vore_selected)
 		updateVRPanel()
