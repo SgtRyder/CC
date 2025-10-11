@@ -141,7 +141,7 @@
 			if(reagent_name in our_reagents)
 				reagent_name = lowertext(REAGENT_HONEY)
 			gen_amount = 1
-			gen_cost = 10
+			gen_cost = 60
 			reagentid = REAGENT_HONEY
 			reagentcolor = "#d3a308"
 		if(REAGENT_SPACEDRUGS)
