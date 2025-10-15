@@ -1,6 +1,7 @@
 /datum/customizer/organ/tail
 	name = "Tail"
 	abstract_type = /datum/customizer/organ/tail
+	allows_disabling = TRUE
 
 /datum/customizer_choice/organ/tail
 	name = "Tail"

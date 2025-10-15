@@ -18,6 +18,13 @@
 		LIPS,
 		HAIR,
 	)
+	///Caustic edit
+	allowed_taur_types = list(
+		/obj/item/bodypart/taur/otie,
+		/obj/item/bodypart/taur/wolf,
+		/obj/item/bodypart/taur/fatwolf,
+	)
+	///Caustic edit end
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	use_skintones = 1
 	attack_verb = "slash"
@@ -54,7 +61,7 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		ORGAN_SLOT_TAIL = /obj/item/organ/tail/lupian,
+		//ORGAN_SLOT_TAIL = /obj/item/organ/tail/lupian,  //caustic remove the customizer already gives the organ
 		ORGAN_SLOT_SNOUT = /obj/item/organ/snout/lupian,
 		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
 		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/knotted,

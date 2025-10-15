@@ -14,6 +14,34 @@
 	skin_tone_wording = "Material"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,NOBLOOD)
+	///Caustic edit
+	allowed_taur_types = list(
+		/obj/item/bodypart/taur/lamia,
+		/obj/item/bodypart/taur/spider,
+		/obj/item/bodypart/taur/horse,
+		/obj/item/bodypart/taur/cow,
+		/obj/item/bodypart/taur/lizard,
+		/obj/item/bodypart/taur/tent,
+		/obj/item/bodypart/taur/tentacle,
+		/obj/item/bodypart/taur/feline,
+		/obj/item/bodypart/taur/slug,
+		/obj/item/bodypart/taur/tempest,
+		/obj/item/bodypart/taur/drake,
+		/obj/item/bodypart/taur/otie,
+		/obj/item/bodypart/taur/wolf,
+		/obj/item/bodypart/taur/alraune,
+		/obj/item/bodypart/taur/frog,
+		/obj/item/bodypart/taur/deer,
+		/obj/item/bodypart/taur/wasp,
+		/obj/item/bodypart/taur/fatwolf,
+		/obj/item/bodypart/taur/fatfeline,
+		/obj/item/bodypart/taur/mermaid,
+		/obj/item/bodypart/taur/altnaga,
+		/obj/item/bodypart/taur/altnagatailmaw,
+		/obj/item/bodypart/taur/fatnaga,
+		/obj/item/bodypart/taur/bunny,
+	)
+	///Caustic edit end
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = 1
 	possible_ages = ALL_AGES_LIST

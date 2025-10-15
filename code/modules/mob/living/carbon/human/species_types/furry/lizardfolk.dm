@@ -13,6 +13,16 @@
 	(+1 Constitution, +1 Willpower)"
 	skin_tone_wording = "Skin Colors"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
+	///Caustic edit
+	allowed_taur_types = list(
+		/obj/item/bodypart/taur/lamia,
+		/obj/item/bodypart/taur/lizard,
+		/obj/item/bodypart/taur/drake,
+		/obj/item/bodypart/taur/altnaga,
+		/obj/item/bodypart/taur/altnagatailmaw,
+		/obj/item/bodypart/taur/fatnaga,
+	)
+	///Caustic edit end
 	possible_ages = ALL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mta.dmi'
@@ -48,9 +58,9 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		ORGAN_SLOT_TAIL = /obj/item/organ/tail/lizard,
+		//ORGAN_SLOT_TAIL = /obj/item/organ/tail/lizard, //caustic remove the customizer already gives the organ
 		ORGAN_SLOT_SNOUT = /obj/item/organ/snout/lizard,
-		ORGAN_SLOT_TAIL_FEATURE = /obj/item/organ/tail_feature/lizard_spines,
+		//ORGAN_SLOT_TAIL_FEATURE = /obj/item/organ/tail_feature/lizard_spines, //caustic remove the customizer already gives the organ
 		ORGAN_SLOT_FRILLS = /obj/item/organ/frills/lizard,
 		ORGAN_SLOT_HORNS = /obj/item/organ/horns,
 		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,

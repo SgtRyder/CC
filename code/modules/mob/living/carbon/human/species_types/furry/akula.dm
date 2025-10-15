@@ -14,7 +14,20 @@
 	find their sanity being clawed away as they find themselves stuck in one place.<br>\
 	(+1 Constitution, +1 Willpower)"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
-	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
+
+	///Caustic edit
+	allowed_taur_types = list(
+		/obj/item/bodypart/taur/lamia,
+		/obj/item/bodypart/taur/tent,
+		/obj/item/bodypart/taur/tentacle,
+		/obj/item/bodypart/taur/slug,
+		/obj/item/bodypart/taur/mermaid,
+		/obj/item/bodypart/taur/altnaga,
+		/obj/item/bodypart/taur/altnagatailmaw,
+		/obj/item/bodypart/taur/fatnaga,
+	)
+	///Caustic edit end
+
 	inherent_traits = list(TRAIT_WATERBREATHING, TRAIT_SEA_DRINKER)
 	possible_ages = ALL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
@@ -51,7 +64,7 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		ORGAN_SLOT_TAIL = /obj/item/organ/tail/akula,
+		//ORGAN_SLOT_TAIL = /obj/item/organ/tail/akula, //caustic remove the customizer already gives the organ
 		ORGAN_SLOT_SNOUT = /obj/item/organ/snout/akula,
 		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
 		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/tapered,
