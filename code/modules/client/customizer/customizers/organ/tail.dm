@@ -211,6 +211,7 @@
 		/datum/sprite_accessory/tail/large_snake,
 		/datum/sprite_accessory/tail/large_snake_plain,
 		/datum/sprite_accessory/tail/large_tails/large_shark,
+		/datum/sprite_accessory/tail/lizard/kobold,
 		//Caustic edit end
 		/datum/sprite_accessory/tail/murid,
 		/datum/sprite_accessory/tail/orca,
