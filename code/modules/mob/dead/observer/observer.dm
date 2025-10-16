@@ -379,12 +379,12 @@ Works together with spawning an observer, noted above.
 			if(force_respawn)
 				mind.remove_antag_datum(/datum/antagonist/zombie)
 				return ..()
-			var/datum/antagonist/zombie/Z = mind.has_antag_datum(/datum/antagonist/zombie)
-			if(!Z.revived)
-				//Caustic edit
-				mind.remove_antag_datum(/datum/antagonist/zombie)
-				return ..()
-				//Caustic edit end
+			//var/datum/antagonist/zombie/Z = mind.has_antag_datum(/datum/antagonist/zombie)
+			//Caustic edit
+			//if(!Z.revived)
+			//	mind.remove_antag_datum(/datum/antagonist/zombie)
+			//	return ..()
+			//Caustic edit end
 	return ..()
 
 /mob/proc/scry_ghost()
