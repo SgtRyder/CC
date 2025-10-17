@@ -168,6 +168,7 @@
 		/datum/sprite_accessory/tail/forked_long,
 		/datum/sprite_accessory/tail/haven,
 		/datum/sprite_accessory/tail/swallow,
+		/datum/sprite_accessory/tail/zorzor,
 		//Caustic edit
 		/datum/sprite_accessory/tail/tiefling,
 		/datum/sprite_accessory/tail/tiefling/heart,
@@ -251,6 +252,7 @@
 		/datum/sprite_accessory/tail/forked_long,
 		/datum/sprite_accessory/tail/haven,
 		/datum/sprite_accessory/tail/swallow,
+		/datum/sprite_accessory/tail/zorzor
 		)
 
 /datum/customizer/organ/tail/dullahan
