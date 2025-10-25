@@ -84,14 +84,14 @@
 		my_crime = "crimes against the Crown"
 	add_bounty(H.real_name, race, gender, descriptor_height, descriptor_body, descriptor_voice, bounty_total, FALSE, my_crime, bounty_poster)
 	to_chat(H, span_danger("You are NOT an Antagonistic role. You are at most a 'soft-antag'. You are an outcast, an outlaw or a heretic. You are unwanted by society and potentially wanted with a bounty. Play this role in good faith and understand that sowing too much chaos will lead to consequences. This role does not give you the go ahead to attack others without warning, frag or spam skeletons in town. Your goal as a wretch is to pursue your personal goals and reach the end of the week alive and not in captivity. Remember this is HRP. ")) //Caustic Cove Edit
-	
+
 /proc/update_wretch_slots()
 	var/datum/job/wretch_job = SSjob.GetJob("Wretch")
 	if(!wretch_job)
 		return
 
 	var/player_count = length(GLOB.joined_player_list)
-	var/slots = 4
+	var/slots = 8 //Caustic edit, static 8 slots
 	
 	//Add 1 slot for every 10 players over 30. Less than 40 players, 4 slots. 40 or more players, 5 slots. 50 or more players, 6 slots - etc.
 	if(player_count > 30)
@@ -99,7 +99,7 @@
 		slots += extra
 
 	//4 slots minimum, 10 maximum.
-	slots = min(slots, 10)
+	slots = min(slots, 8) //Caustic edit, static 8 slots
 
 	wretch_job.total_positions = slots
 	wretch_job.spawn_positions = slots

@@ -7,7 +7,7 @@
 	cmode_music = 'sound/music/combat_heretic.ogg'
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_ARCYNE_T3, TRAIT_ALCHEMY_EXPERT, TRAIT_MEDICINE_EXPERT)
-	maximum_possible_slots = 1 //Maintainer okayed this. Bumped down to a single slot since this is the only wretch role capable of spawning other antags. It's functionally 3 antag slots.
+	maximum_possible_slots = 3 //Maintainer okayed this. Bumped down to a single slot since this is the only wretch role capable of spawning other antags. It's functionally 3 antag slots.
 	subclass_stats = list(
 		STATKEY_INT = 4,
 		STATKEY_PER = 2,
@@ -22,7 +22,6 @@
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
-		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE, // Have to grind a bit, but can use the ZRONK chair right away
 		/datum/skill/craft/alchemy = SKILL_LEVEL_EXPERT,
 		/datum/skill/magic/arcane = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN, //For lux extractions.
