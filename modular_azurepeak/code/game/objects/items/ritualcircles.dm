@@ -1514,6 +1514,7 @@
 	cloak = /obj/item/clothing/cloak/graggar
 	r_hand = /obj/item/rogueweapon/greataxe/steel/doublehead/graggar
 
+//Caustic edit
 /obj/effect/decal/cleanable/roguerune/god/baotha
 	name = "Rune of Hedonism"
 	desc = "A Holy Rune of Baotha. Relief for the broken hearted."
@@ -1706,7 +1707,8 @@
 		target.emote("Agony")
 		target.apply_damage(60, BURN, BODY_ZONE_CHEST)
 		loc.visible_message(span_cult("[target] violently writhes and thrashes atop the rune as their flesh is scorched by Baotha's wrath!"))
-		
+//Caustic edit end
+
 /obj/effect/decal/cleanable/roguerune/god/psydon
 	name = "Rune of Enduring"
 	desc = "A Holy Rune of Psydon. It depicts His holy symbol, yet nothing stirs within you."

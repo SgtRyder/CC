@@ -53,6 +53,7 @@
 	if(!testes)
 		return
 	var/obj/item/organ/vagina/vag = wife.getorganslot(ORGAN_SLOT_VAGINA)
+	//Caustic edit
 	if(!vag && !HAS_TRAIT(wife, TRAIT_BAOTHA_FERTILITY_BOON))
 		return
 	if(!is_virile())
@@ -80,6 +81,7 @@
 			wife.mpreg = TRUE
 		else
 			wife.mpreg_chance = min(prob_for_impreg + IMPREG_PROB_INCREMENT, IMPREG_PROB_MAX)
+	//Caustic edit end
 
 /mob/living/proc/can_do_sex()
 	return TRUE
